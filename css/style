@@ -1,0 +1,291 @@
+/*-------------IMPORTS-------------*/
+
+@import url("bootstrap.css");
+
+/* .................................... */
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #4684ee;
+    z-index: 999999;
+    height: 100%;
+    width: 100%;
+    overflow: hidden !important;
+}
+
+.status {
+    width: 512px;
+    height: 512px;
+    position: absolute;
+    left: 35%;
+    top: 20%;
+    background-image: url(../images/logo/code-loader.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    margin: -70px 0 0 -70px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-fluid {
+    margin: 0px;
+    padding: 0px;
+}
+
+.banner {
+    background-image: url("../images/backgrounds/h_img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 680px;
+}
+
+.jumbotron {
+    background: none;
+    color: whitesmoke;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.jumbotron .logo {
+    padding-top: 9rem;
+    width: 77px;
+}
+
+.jumbotron img {
+    padding-top: 8rem;
+}
+
+.jumbotron h1 {
+    font-size: 42px;
+    line-height: 80px;
+    padding-top: 20px;
+    margin-bottom: 0px;
+}
+
+.mouse_click {
+    animation-name: spin;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.mouse_click:hover {
+    animation: none;
+}
+
+.section-header {
+    text-align: center;
+    line-height: 30px;
+}
+
+.about-section {
+    margin: 50px 150px;
+}
+
+.services {
+    padding: 100px;
+    background-image: url("../images/backgrounds/s_image.jpg");
+    width: 100%;
+    color: whitesmoke;
+    background-size: cover;
+}
+
+figure,
+.portfolio img {
+    cursor: pointer;
+}
+
+.design-initially-hidden,
+.dev-initially-hidden,
+.p-mgt-initially-hidden {
+    display: none;
+}
+
+
+/* image overlay on hover */
+
+.box {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    /* width: 220px;
+    height: 180px; */
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.466);
+    opacity: 0;
+    border-radius: 3px;
+}
+
+.box:hover .image {
+    opacity: 0.3;
+}
+
+.box:hover .middle {
+    opacity: 1;
+}
+
+.project-name {
+    display: none;
+    color: white;
+    font-size: 14px;
+    padding: 0.2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    width: 116px;
+    height: 60px;
+    border: 3px solid white;
+    margin: auto;
+    border-radius: 3px;
+}
+
+
+/* image overlay on hover */
+
+.what-we-do {
+    margin: 50px 70px;
+}
+
+.what-we-do h2 {
+    margin-bottom: 1rem;
+}
+
+.col-md-4 img {
+    width: 60px;
+}
+
+figcaption {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.portfolio {
+    margin: 100px;
+}
+
+.portfolio img {
+    margin: 5%;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.contact {
+    padding: 50px;
+    background-image: url("../images/backgrounds/c_image.jpg");
+    width: 100%;
+    color: whitesmoke;
+    background-size: cover;
+}
+
+.contact input,
+.contact textarea {
+    background: none;
+    border: 2px solid gray;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.form-control {
+    background-color: black;
+    color: whitesmoke;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.849) !important;
+}
+
+.contact .form-row {
+    padding: 8px;
+    width: 70%;
+    margin: auto;
+}
+
+.form-group button {
+    margin: auto;
+    padding: 5px 40px;
+    border-radius: 5px;
+    background-image: radial-gradient(rgb(226, 216, 226), #864e05e7);
+    border: none;
+    color: black;
+}
+
+.contact button:hover {
+    background-image: radial-gradient(rgba(226, 216, 226, 0.918), #864e05);
+    color: #553204;
+    font-style: italic;
+}
+
+.contact button:active {
+    background-image: radial-gradient(rgba(226, 216, 226, 0.918), #864e05);
+    border: none;
+}
+
+.raise:hover,
+.raise:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+}
+
+#message-alert {
+    display: none;
+}
+
+.alert {
+    width: fit-content;
+    margin: auto;
+}
+
+footer .row {
+    width: 70%;
+    padding: 30px 20px 10px 20px;
+    margin: auto;
+    justify-content: center;
+}
+
+footer img {
+    width: 45px;
+    /* padding: 5px; */
+}
+
+footer h5 {
+    font-size: 12px;
+    line-height: 15px;
+}
