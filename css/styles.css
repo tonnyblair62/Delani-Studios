@@ -52,7 +52,7 @@
 
 .jumbotron {
     background: none;
-    color: whitesmoke;
+    color: rgba(245, 245, 245, 0.034);
     text-align: center;
     text-transform: uppercase;
     font-size: 12px;
