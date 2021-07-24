@@ -2,209 +2,227 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Delani Studio</title>
-    <link rel="shortcut icon" href="images/logo/logos.png">
-    <link rel="stylesheet" href="./css/styles.css">
-    <script src="./js/jquery-3.4.1.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/scripts.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DELANI STUDIO</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css/" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
 </head>
 
 <body>
-    <div class="preloader">
-        <div class="status"></div>
+  <div class="cont">
+    <!--HEADER-->
+    <div class="jumbotron">
+      <div class="jumbotron-text">
+        <img src="assets/logo/logo.png" alt="logo" />
+
+        <h1>WELCOME <br> TO DELANI STUDIO</h1>
+        <p>amazing people are making amazing designs in a fun environment.</p>
+      </div>
+      <div id="mouse-click">
+        <span><a href="#about-us"><img src="assets/assets/mouse_click.png" alt="" /></a></span>
+      </div>
     </div>
 
+    <!--ABOUT US-->
+    <div class="about">
+      <div class="content-header">
+        <a class="anchor" name="about-us"></a>
+        <h2>ABOUT US</h2>
+      </div>
+      <div class="content-body">
+        <p>When you work with us, you are part of a team committed
+          collaborators. All aspects of our software development process aree
+          intergrated, interactive <br>and agile.</p>
+        <p>Our approach unifies design, development and product management to
+          create exceptional products.</p>
+        <p>We start each project by understanding your business goals, the
+          user's needs and the product requirements.</p>
+        <p>Then we help translate them into effective and elegant
+          solutions.</p>
+      </div>
+    </div>
 
-    <header class="container-fluid">
+    <!--SERVICES-->
+    <div class="services">
+      <div class="content-header">
+        <h2>SERVICES</h2>
+      </div>
+      <div class="content-body">
+        <p>Before we sign a contract or write a line of code our team will
+          spend the necesssary time needed to underrstand your product
+          vision.</p>
+        <p>The outcome of this scoping session is proposal or high-level
+          statement of work.</p>
+        <p>Based on your requirements, we can provide a complete offering or
+          just the pieces you need.</p>
+      </div>
+    </div>
 
-        <div class="banner">
-            <div class="jumbotron">
-                <img class="logo" src="./images/logo/logo.png" alt="Delani Logo">
-
-                <h1 class="display-4">Welcome to Delani Studio</h1>
-                <p>Amazing people are making amazing designs in a fun environment</p>
-                <a href="#about"><img class="mouse_click" src="./images/mouse_click.png" alt="mouse_click"></a>
+    <!--WHAT-WE-DO-->
+    <div class="whatwedo">
+      <div class="content-header">
+        <h2>WHAT WE DO</h2>
+      </div>
+    </div>
+    <div class="content-body">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="design">
+            <div class="design-img">
+              <img src="assets/services_icons/design_icon.png" alt="" />
             </div>
+            <h3>DESIGN</h3>
+            <div class="design-text">
+              <p id="design-par">We pride ourselves in design practices that offer a wide range of services. Our design process is founded on foundational principles and client feedback to ensure customer satisfaction.</p>
+            </div>
+          </div>
         </div>
-    </header>
-    <main class="container-fluid">
-        <div class="about-section section-header" id="about">
-            <h3>ABOUT US</h3>
-            <p>When you work with us, you are part of a team of collaborators. All aspects of our software development process are intergrated, 
-                interactive and agile.
-                <br> Our approach unifies design, development and product management to create exceptional products. We start each project by understanding our business goals,
-                 the user's needs and the product requirements.
-                <br> Then we translate them into effective elegant solutions.
-            </p>
-
+        <div class="col-4">
+          <div class="development">
+            <div class="development-img">
+              <img src="assets/services_icons/dev_icon.png" alt="" />
+            </div>
+            <h3>DEVELOPMENT</h3>
+            <div class="development-text">
+              <p id="development-par">Our development process is agile and simple.</p>
+            </div>
+          </div>
         </div>
-        <div class="services section-header">
-            <h3>SERVICES</h3>
-            <p>Before we sign a contract or write a line of code our team will spend the necessary time needed to understand your product vision.
-                <br>The outcome of this scoping session is a proposal or high-level statement of work.
-                <br>Based on your requirements, we can provide a complete offering or just the pieces you need.
-            </p>
+        <div class="col-4">
+          <div class="product">
+            <div class="product-img">
+              <img src="assets/services_icons/product_icon.png" alt="" />
+            </div>
+            <h3>PRODUCT</h3>
+            <div class="product-text">
+              <p id="product-par">We are intent on releasing ready-made products that meet the customer's needs and exceed their expectations.</p>
+            </div>
+          </div>
         </div>
-        <div class="what-we-do section-header">
-            <h3>WHAT WE DO</h3>
-            <div class="row">
-                <div class="col-md-4">
-                    <figure>
-                        <img class="design-initially-showing" src="./images/services_icons/design_icon.png" alt="DESIGN">
-                        <figcaption>DESIGN</figcaption>
-                        <p class="design-initially-hidden">Our design practice offers a full range of services including brand strategy, interaction and visual designand user experience testing. <br> Throughout your project, our designers create and implement visual design and workflows,
-                            solicit user feedback and work with you to make sure wat gets built is what is needed.</p>
-                    </figure>
-                </div>
-                <div class="col-md-4">
-                    <figure>
-                        <img class="dev-initially-showing" src="./images/services_icons/dev_icon.png" alt="DEVELOPMENT">
-                        <figcaption>DEVELOPMENT</figcaption>
-                        <p class="dev-initially-hidden">
-                            All engineers are fluent in the latest enterprise, mobile and web development technologies.
-                            <br> They collaborate with your team to write, and improve code ona daily basis, using proven practices such as test-driven development and pair programming.
-                        </p>
-                    </figure>
-                </div>
-                <div class="col-md-4">
-                    <figure>
-                        <img class="p-mgt-initially-showing" src="./images/services_icons/product_icon.png" alt="PRODUCT MANAGEMENT">
-                        <figcaption>PRODUCT MANAGEMENT</figcaption>
-                        <p class="p-mgt-initially-hidden">
-                            Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live. <br> The iterative process allows for changes as business rewquirements evolve.
-                        </p>
-                    </figure>
-                </div>
-            </div>
+      </div>
+    </div>
 
+    <!--PORTFOLIO-->
+    <div class="portfolio">
+      <div class="content-header">
+        <h2>PORTFOLIO</h2>
+      </div>
+      <div class="content-body">
+        <div class="row">
+          <div class="col-md-3">
+            <img class="hov" src="assets/portfolio/work4.jpg" alt="" />
+            <div class="port-text">DELANI STUDIO</div>
+          </div>
+          <div class="col-md-3">
+            <img class="hov" src="assets/portfolio/work3.jpg" alt="" />
+            <div class="port-text">DELANI STUDIO</div>
+          </div>
+          <div class="col-md-3">
+            <img class="hov" src="assets/portfolio/work2.jpg" alt="" />
+            <div class="port-text">DELANI STUDIO</div>
+          </div>
+          <div class="col-md-3">
+            <img class="hov" src="assets/portfolio/work1.jpg" alt="" />
+            <div class="port-text">DELANI STUDIO</div>
+          </div>
         </div>
-        <div class="portfolio section-header">
-            <h3>PORTFOLIO</h3>
-            <div class="row">
-                <div class="col-md-3 box">
-                    <img src="./images/portfolio/work4.jpg" alt="portfolio">
-                    <div class="middle">
-                        <h3 class="project-name">Solid background</h3>
-                    </div>
-                </div>
-                <div class="col-md-3 box">
-                    <img src="./images/portfolio/work3.jpg" alt="portfolio">
-                    <div class="middle">
-                        <h3 class="project-name">Mighty Ontario</h3>
-                    </div>
-                </div>
-                <div class="col-md-3 box">
-                    <img src="./images/portfolio/work2.jpg" alt="portfolio">
-                    <div class="middle">
-                        <h3 class="project-name">Cool wallpaper</h3>
-                    </div>
-                </div>
-                <div class="col-md-3 box">
-                    <img src="./images/portfolio/work1.jpg" alt="portfolio">
-                    <div class="middle">
-                        <h3 class="project-name">Movie player</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 box">
-                    <img src="./images/portfolio/work5.jpg" alt="portfolio">
-                    <div class="middle">
-                        <h3 class="project-name">Elena Website</h3>
-                    </div>
-                </div>
-                <div class="col-md-3 box">
-                    <img src="./images/portfolio/work6.jpg" alt="portfolio">
-                    <div class="middle">
-                        <h3 class="project-name">Form elements</h3>
-                    </div>
-                </div>
-                <div class="col-md-3 box">
-                    <img src="./images/portfolio/work7.jpg" alt="portfolio">
-                    <div class="middle">
-                        <h3 class="project-name">Logo mock-up</h3>
-                    </div>
-                </div>
-                <div class="col-md-3 box">
-                    <img src="./images/portfolio/work8.jpg" alt="portfolio">
-                    <div class="middle">
-                        <h3 class="project-name">Bailey wonger</h3>
-                    </div>
-                </div>
-            </div>
-
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-md-3">
+          <img class="hov" src="assets/portfolio/work6.jpg" alt="" />
+          <div class="port-text">DELANI STUDIO</div>
         </div>
-        <div class="contact section-header">
-            <div id="message-alert" class="alert" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                          <span aria-hidden="true">×</span>
-                        </button>
-            </div>
-            <h3>CONTACT US</h3>
-            <form>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <input required type="text" class="form-control" id="name" placeholder="Name...">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <input required type="email" class="form-control" id="email" placeholder="Email...">
-                    </div>
-
-                    <div class="form-group">
-                        <textarea class="form-control" required placeholder="Your message here..." id="textarea" cols="90" rows="7"></textarea>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <button id="button" class="btn-primary raise" onclick="showCustomerMessage()">Submit</button>
-                </div>
-
+        <div class="col-md-3">
+          <img class="hov" src="assets/portfolio/work5.jpg" alt="" />
+          <div class="port-text">DELANI STUDIO</div>
         </div>
-
-    </main>
-
-    <footer class="section-header ">
-        <div class="row ">
-            <div class="col">
-                <img src="./images/social_icons/twitter.png " alt=" ">
-            </div>
-            <div class="col">
-                <img src="./images/social_icons/dribble.png " alt=" ">
-            </div>
-            <div class="col ">
-                <img src="./images/social_icons/facebook.png " alt=" ">
-            </div>
-            <div class="col ">
-                <img src="./images/social_icons/g_plus.png " alt=" ">
-            </div>
-            <div class="col ">
-                <img src="./images/social_icons/skype.png " alt=" ">
-            </div>
-            <div class="col ">
-                <img src="./images/social_icons/stumble_upon.png " alt=" ">
-            </div>
-            <div class="col ">
-                <img src="./images/social_icons/behance.png " alt=" ">
-            </div>
-            <div class="col ">
-                <img src="./images/social_icons/pinterest.png " alt=" ">
-            </div>
-            <div class="col ">
-                <img src="./images/social_icons/flickr.png " alt=" ">
-            </div>
+        <div class="col-md-3">
+          <img class="hov" src="assets/portfolio/work7.jpg" alt="" />
+          <div class="port-text">DELANI STUDIO</div>
         </div>
-        <div class="row ">
-            <div class="col ">
-                <h5><strong>DELANI STUDIO <br> 2021</strong></h5>
-            </div>
+        <div class="col-md-3">
+          <img class="hov" src="assets/portfolio/work8.jpg" alt="" />
+          <div class="port-text">DELANI STUDIO</div>
         </div>
+      </div>
+    </div>
 
-    </footer>
+    <!--CONTACT US-->
+    <div class="contact">
+      <div class="content-header">
+        <h2>CONTACT US</h2>
+      </div>
+      <div class="content-body">
+        <form id="myform" class="row form-inline">
+          <div class="form-group col-md-6">
+            <label class="sr-only" for="name">Name</label>
+            <input type="name" class="form-control" id="name" placeholder="Name..." />
+          </div>
+          <div class="form-group col-md-6">
+            <label class="sr-only" for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Email..." />
+          </div>
+        </form>
+      </div>
+      <br>
+      <div class="form-group col-md-12">
+        <label class="sr-only" for="textbox"></label>
+        <input type="name" class="form-control" id="name" placeholder="Your Mesage Here..."/>
+      </div>
+      <br>
+      <div>
+        <button class="btn btn-outline-primary" value="name" type="button" onclick="myname()">SUBMIT</button>
+        <button class="btn btn-outline-danger" value="reset form" type="button" onclick="reset()">RESET</button>
+      </div>
+    </div>
 
-
+    <!--FOOTER-->
+    <div class="footer">
+      <div class="social">
+        <ul class="social-ul">
+          <li class="social-li">
+            <img src="assets/social_icons/behance.png" />
+          </li>
+          <li class="social-li">
+            <img src="assets/social_icons/dribble.png" />
+          </li>
+          <li class="social-li">
+            <img src="assets/social_icons/facebook.png" />
+          </li>
+          <li class="social-li">
+            <img src="assets/social_icons/flickr.png" />
+          </li>
+          <li class="social-li">
+            <img src="assets/social_icons/g_plus.png" />
+          </li>
+          <li class="social-li">
+            <img src="assets/social_icons/pinterest.png" />
+          </li>
+          <li class="social-li">
+            <img src="assets/social_icons/skype.png" />
+          </li>
+          <li class="social-li">
+            <img src="assets/social_icons/stumble_upon.png" />
+          </li>
+          <li class="social-li">
+            <img src="assets/social_icons/twitter.png" />
+          </li>
+          <li class="social-li">
+            <img src="assets/social_icons/you_tube.png" />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p>DELANI STUDIO</p>
+    <p>2021</p>
+    <footer>&copy; Copyright 2021 by Tonny Blair</footer>
+  </div>
+  </div>
 </body>
 
 </html>
